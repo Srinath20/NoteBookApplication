@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notebook Application</title>
+  <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+
+<div class="container">
+  <h1>Notebook Application</h1>
+
+  <label for="title">Notebook Title:</label>
+  <input type="text" id="title" placeholder="Enter title">
+
+  <label for="description">Notebook Description:</label>
+  <textarea id="description" placeholder="Enter description"></textarea>
+
+  <button onclick="addNotebook()">Add Notebook</button>
+
+  <hr>
+
+  <label for="search">Search Notebooks:</label>
+  <input type="text" id="search" oninput="searchNotebooks()" placeholder="Search by title">
+
+  <div id="notebooks"></div>
+
+  <div class="count" id="totalCount"></div>
+  <div class="count" id="filteredCount"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
+
+
+
